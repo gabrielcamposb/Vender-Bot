@@ -1,0 +1,97 @@
+/* Importa a fonte "Poppins" com diferentes pesos */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Poppins", monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: rgb(11, 17, 12);
+}
+
+/* Estiliza o título principal */
+#title {
+    text-align: center;
+    color: black;
+}
+
+/* Estiliza o contêiner que envolve as atualizações */
+#update-container {
+    width: 65vw;
+    background: white;
+    color: #333;
+    margin: 2.5vh auto;
+    padding: 2.2vw;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Estiliza o logo dentro do contêiner de atualizações */
+.logo {
+    width: 5.5vw;
+    height: auto;
+    float: left;
+}
+
+/* Estiliza os títulos de nível 1 */
+h1 {
+    border-bottom: 2.1px solid #333;
+    padding-bottom: 2vh;
+    margin-bottom: 2.6vh;
+}
+
+/* Estiliza as seções de atualização */
+.update {
+    margin-bottom: 31px;
+}
+
+/* Estiliza os parágrafos dentro das seções de atualização */
+.update p {
+    margin: 0;
+}
+
+/* Estiliza os textos em negrito dentro das atualizações */
+.update strong {
+    font-size: 1.2em;
+}
+
+/* Estiliza as datas e horários das atualizações */
+.update time {
+    font-size: 0.84em;
+    color: #666;
+    margin-left: 20px;
+}
+
+/* Estilos responsivos para telas menores que 950px */
+@media only screen and (max-width: 950px) {
+   #update-container {
+        width: 85vw;
+    }
+
+   .logo {
+        width: 10vw;
+    }
+}
+
+/* Estilos responsivos para telas menores que 600px */
+@media only screen and (max-width: 600px) {
+   #update-container {
+        width: 90vw;
+    }
+
+   .logo {
+        width: 15vw;
+    }
+
+   h1 {
+        font-size: 1.5rem;
+    }
+
+   .update strong {
+        font-size: 1.1em;
+    }
+
+   .update time {
+        font-size: 0.8em;
+    }
+}

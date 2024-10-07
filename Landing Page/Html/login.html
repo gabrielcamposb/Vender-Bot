@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../Css/login.css">
+    <script src="../Script/login.script.js" defer></script>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>It's good to see you again</h1>
+            <img src="../Imagens/logo.png" alt="login-yoda" class="logo">
+        </div>
+        
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="text-field">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Username">
+                </div>
+                
+                <div class="text-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+                
+                <button class="login-button" onclick="loginUser()">Login</button>
+                <button class="register-button" onclick="window.location.href = 'register.html';">Register</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

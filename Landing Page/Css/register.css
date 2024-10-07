@@ -1,0 +1,174 @@
+/* Importa a fonte "Poppins" de diferentes pesos */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* Define a fonte padrão para todos os elementos */
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Remove as margens do corpo da página */
+body {
+    margin: 0;
+}
+
+/* Aplica o box-sizing para todos os elementos do corpo */
+body * {
+    box-sizing: border-box;
+}
+
+/* Estiliza o contêiner principal da seção de registro */
+.main-register {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(11, 17, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estiliza a seção esquerda da área de registro */
+.left-register {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estiliza o título principal dentro da seção esquerda */
+.left-register > h1 {
+    font-size: 3.4rem;
+    color: white;
+}
+
+/* Estiliza a logo da seção esquerda */
+.logo {
+    width: 33vw;
+}
+
+/* Estiliza o subtítulo com ID h2 */
+#h2 {
+    font-size: 1.3rem;
+    color: white;
+}
+
+/* Estiliza a seção direita da área de registro */
+.right-register {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estiliza o cartão de registro */
+.card-register {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #166827;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #114f1d;
+}
+
+/* Estiliza o título do cartão de registro */
+.card-register > h1 {
+    color: white;
+    font-weight: 800;
+    margin: 0;
+}
+
+/* Estiliza os campos de entrada de texto */
+.text-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+/* Estiliza os campos de entrada de texto especificamente */
+.text-field > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #0c3715;
+    color: white;
+    font-size: 12pt;
+    box-shadow: #114f1d;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Estiliza as labels dos campos de entrada */
+.text-field > label {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Estiliza o placeholder dos campos de entrada */
+.text-field > input::placeholder {
+    color: white;
+}
+
+/* Estiliza o botão de registro */
+.register-button {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #166827;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #08240d;
+}
+
+/* Estilos responsivos para telas menores que 950px */
+@media only screen and (max-width: 950px) {
+   .card-register {
+        width: 85%;
+    }
+}
+
+/* Estilos responsivos para telas menores que 600px */
+@media only screen and (max-width: 600px) {
+   .main-register {
+        flex-direction: column;
+    }
+
+   .left-register > h1 {
+        display: none;
+    }
+
+   .left-register {
+        width: 100%;
+        height: auto;
+    }
+
+   .right-register {
+        width: 100%;
+        height: auto;
+    }
+
+   .logo {
+        width: 50vw;
+    }
+
+   .card-register {
+        width: 90%;
+    }
+
+    #h2 {
+        font-size: 1.1rem;
+    }
+}

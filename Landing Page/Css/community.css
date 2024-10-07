@@ -1,0 +1,115 @@
+/* Importação da fonte Poppins do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* Estilos globais para o corpo da página */
+body {
+    font-family: "Poppins", monospace; /* Define a fonte como Poppins e monospace */
+    line-height: 1.6; /* Define o espaçamento entre linhas */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    background: rgb(11, 17, 12); /* Define a cor de fundo como um tom escuro de verde */
+}
+
+/* Estilo para o título principal da página */
+#title {
+    text-align: center; /* Centraliza o título */
+    color: black; /* Define a cor do texto como preto */
+}
+
+/* Contêiner principal da comunidade */
+#community-container {
+    width: 90%; /* Define a largura do contêiner como 90% do viewport */
+    max-width: 65vw; /* Define uma largura máxima de 65% do viewport */
+    background: white; /* Define a cor de fundo como branco */
+    color: #333; /* Define a cor do texto como cinza escuro */
+    margin: 2.5vh auto; /* Define uma margem vertical e centraliza o contêiner horizontalmente */
+    flex-direction: column; /* Define a direção dos elementos internos em coluna */
+    padding: 2.2vw; /* Espaçamento interno do contêiner */
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o contêiner */
+}
+
+/* Estilo da logo */
+.logo {
+    width: 5.5vw; /* Define a largura da logo em relação ao viewport */
+    height: auto; /* Ajusta a altura proporcionalmente */
+    float: left; /* Faz com que a logo flutue para a esquerda */
+}
+
+/* Estilo para o título (h1) */
+h1 {
+    border-bottom: 0.2vw solid #333; /* Adiciona uma borda inferior para destacar o título */
+    padding-bottom: 2vh; /* Espaçamento abaixo do título */
+    margin-bottom: 2.6vh; /* Margem abaixo do título */
+}
+
+/* Estilo para o contêiner da comunidade */
+.community {
+    margin-bottom: 3vh; /* Define a margem inferior para separar cada comunidade */
+}
+
+/* Estilo para os parágrafos dentro da classe comunidade */
+.community p {
+    margin: 0; /* Remove a margem dos parágrafos */
+}
+
+/* Estilo para os textos destacados (negrito) */
+.community strong {
+    font-size: 1.2em; /* Aumenta o tamanho da fonte para dar ênfase */
+}
+
+/* Estilo para elementos <time> dentro da comunidade */
+.community time {
+    font-size: 0.84em; /* Define um tamanho de fonte menor */
+    color: #666; /* Cor de texto em cinza médio */
+    margin-left: 2vw; /* Espaçamento à esquerda do elemento <time> */
+}
+
+/* Estilo para os comentários */
+.comment {
+    background-color: #f9f9f9; /* Fundo cinza claro para destacar os comentários */
+    padding: 1vw; /* Espaçamento interno dos comentários */
+    margin-left: 2vw; /* Define um recuo à esquerda */
+    border-left: 0.2vw solid #ccc; /* Borda esquerda para destacar os comentários */
+}
+
+/* Estilo para os campos de texto dentro da classe comentário */
+.comment input[type="text"] {
+    width: 100%; /* O campo de texto ocupa toda a largura disponível */
+    padding: 0.5vw; /* Espaçamento interno do campo */
+    margin-top: 0.5vw; /* Margem superior do campo */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 3px; /* Bordas levemente arredondadas */
+}
+
+/* Estilo para o botão de envio de comentário */
+.comment input[type="submit"] {
+    margin-top: 0.4vw; /* Margem superior do botão */
+    padding: 0.5vw 1vw; /* Espaçamento interno do botão */
+    background-color: #4caf50; /* Fundo verde para destacar o botão */
+    color: #fff; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 0.3vw; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+}
+
+/* Estilo para comentários que foram respondidos */
+.replied {
+    margin-left: 2vw; /* Recuo à esquerda para destacar comentários respondidos */
+    margin-top: 0.7vw; /* Margem superior */
+}
+
+/* Estilo para comentários do staff */
+#staff-comment {
+    color: red; /* Define a cor do texto como vermelho para destacar */
+}
+
+/* Estilos responsivos para telas menores */
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 20%; /* Aumenta a largura da logo para 20% em telas menores */
+    }
+
+    #community-container {
+        width: 95%; /* Expande a largura do contêiner principal para 95% */
+    }
+}

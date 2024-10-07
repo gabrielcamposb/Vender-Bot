@@ -1,0 +1,76 @@
+/* Importação da fonte Poppins do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* Define o box-sizing para incluir padding e bordas no tamanho total dos elementos */
+* {
+  box-sizing: border-box;
+}
+
+/* Estilos globais para o corpo da página */
+body {
+  margin: 0; /* Remove margem padrão do body */
+  font-family: "Poppins", sans-serif; /* Define a fonte como Poppins */
+}
+
+/* Estilo do cabeçalho da página */
+header {
+  font-size: 1.5em; /* Define o tamanho da fonte do cabeçalho */
+  background-color: #166827; /* Define a cor de fundo como verde escuro */
+  color: #fff; /* Define a cor do texto como branco */
+  padding: 18px 0; /* Define o espaçamento interno vertical */
+  text-align: center; /* Centraliza o texto no cabeçalho */
+}
+
+/* Estilo para o campo de busca */
+#search {
+  width: 20vw; /* Largura do campo de busca definida em viewport width */
+  height: 3.7vh; /* Altura do campo de busca em viewport height */
+  padding: 1.2vh; /* Espaçamento interno */
+  border-radius: 10vw; /* Bordas arredondadas, estilo de cápsula */
+  border: 1px solid #ccc; /* Define uma borda cinza clara */
+  font-size: 0.7em; /* Tamanho da fonte reduzido */
+  font-family: "Poppins", sans-serif; /* Fonte Poppins para consistência */
+}
+
+/* Contêiner que agrupa todos os comandos */
+.commands {
+  display: flex; /* Define layout flexível */
+  flex-wrap: wrap; /* Permite que os elementos "quebrem" para a próxima linha */
+  justify-content: center; /* Centraliza os elementos filhos */
+  gap: 3px; /* Define um espaço entre os elementos */
+  padding: 10px 20px; /* Espaçamento interno do contêiner */
+  background-color: rgb(11, 17, 12); /* Cor de fundo verde escuro */
+  border-radius: 0.1vw; /* Bordas ligeiramente arredondadas */
+}
+
+/* Estilo individual para cada bloco de comando */
+.command {
+  background-color: #f0f0f0; /* Cor de fundo cinza claro */
+  border-radius: 13px; /* Define bordas arredondadas */
+  margin: 13px; /* Espaçamento externo entre os blocos de comando */
+  padding: 2.8vw; /* Espaçamento interno proporcional ao viewport */
+  width: calc(33.333% - 26px); /* Largura calculada para garantir 3 comandos por linha, considerando o espaçamento */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o elemento */
+  font-size: 1rem; /* Define o tamanho da fonte */
+  min-height: 12vh; /* Altura mínima para os blocos de comando */
+  transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+  overflow: hidden; /* Oculta o conteúdo que ultrapassar o bloco */
+  position: relative; /* Define o posicionamento relativo para futuros elementos posicionados */
+}
+
+/* Estilo para o título dos blocos de comando */
+.command h2 {
+  margin-top: 0; /* Remove a margem superior padrão */
+}
+
+/* Estilo para o parágrafo dentro dos blocos de comando */
+.command p {
+  margin-bottom: 0; /* Remove a margem inferior padrão */
+}
+
+/* Estilo responsivo para telas menores */
+@media (max-width: 768px) {
+  .command {
+    width: 90%; /* Altera a largura dos blocos de comando para 90% em telas pequenas */
+  }
+}
