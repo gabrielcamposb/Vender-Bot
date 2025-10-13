@@ -1,6 +1,6 @@
-# Landing-Page
+# Vender Bot
 
-Bem-vindo à landing page do Vender bot para o "discord", aqui, você encontrará informações sobre as funcionalidades do bot como realizar login e registro, acessar a lista de comandos, atualizações e muito mais.
+Bem-vindo à página do Vender Bot, aqui, você encontrará informações sobre as funcionalidades do bot como realizar login e registro, acessar a lista de comandos, atualizações e muito mais.
 
 Este projeto é composto por três linguagens principais: HTML5, CSS3 e JavaScript
 
